@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Fashion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #fff;
+            color: #111;
+        }
+
+        /* Top bar */
+        .top-bar {
+            background-color: #111;
+            color: #fff;
+            font-size: 12px;
+            text-align: center;
+            padding: 5px 0;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #111;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #e91e63;
+        }
+
+        .icons {
+            display: flex;
+            gap: 20px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        /* Hero section */
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 80vh;
+            background: url('https://img.freepik.com/fotos-premium/homem-vendo-o-por-do-sol-na-praia_53876-109613.jpg            ') center/cover no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-text {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .hero-text h1 {
+            font-size: 50px;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .hero-text p {
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero-text h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        FRETE STANDARD GRÁTIS EM COMPRAS A PARTIR DE R$ 1.500
+    </div>
+
+    <header>
+        <div class="logo">LUXURY</div>
+        <nav>
+            <ul>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Fragrâncias</a></li>
+                <li><a href="#">Casa</a></li>
+                <li><a href="#">Boutique</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <span>&#128269;</span> <!-- search -->
+            <span>&#10084;</span> <!-- favorite -->
+            <span>&#128722;</span> <!-- cart -->
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Estilo que Inspira</h1>
+            <p>Descubra as últimas tendências da moda internacional</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Luxury Fashion. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
